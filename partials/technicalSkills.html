@@ -1,0 +1,18 @@
+<section id="techSkills" ng-controller="TechnicalSkillsController">
+    <header>
+        <h1>Technical Skills</h1>
+    </header>
+
+    <table class="table table-striped table-bordered table-hover">
+        <tr ng-repeat="skill in skills">
+            <th>
+                {{skill.label}}
+            </th>
+            <td>
+                <ul>
+                    <li ng-repeat="technology in skill.items">{{technology.label}}</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</section>

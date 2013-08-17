@@ -1,0 +1,10 @@
+foo = {"skills": [
+    {
+            "type": "Language",
+            "items": ["Java", "SQL", "HTML", "CSS", "Javascript", "Bash Shell Scripting", "Ruby on Rails", "Groovy"]
+    },
+    {
+            "type": "ORM",
+            "items": ["Hibernate Core", "Hibernate Annotation", "Hibernate Validator"]
+    }
+]}

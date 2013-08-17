@@ -1,0 +1,31 @@
+<section id="professionalHistory" ng-controller="ProfessionalHistoryController">
+    <header>
+        <h1>Professional History</h1>
+    </header>
+    <hr/>
+
+
+   <!-- <section ng-repeat="work in works">
+        <header>
+            <h2>{{work.company}}<small>{{work.start}} - {{work.finish}}</small></h2>
+            <h3>{{work.position}}</h3>
+        </header>
+        <article ng-repeat="project in work.projects">
+            <header>
+                <h4>{{project.name}}<small>{{project.start}} - {{project.finish}}</small></h4>
+                <div ng-bind-html-unsafe="project.summary"></div>
+            </header>
+        </article>
+        <hr/>
+    </section>-->
+
+    <div id="professionalHistoryAccordion" class="accordion">
+        <div class="accordion-group" ng-repeat="work in works">
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#professionalHistoryAccordion" href="#collapseOne">
+                    <h2>{{work.company}}<small>{{work.start}} - {{work.finish}}</small></h2>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
