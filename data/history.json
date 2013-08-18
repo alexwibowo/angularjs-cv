@@ -40,9 +40,9 @@ workHistory = {"workHistory": [
                     "<p>The Apollo Document Management System is an ongoing project with the goal of providing an effective and efficient solution for CGU to manage its documents. These documents are previously stored in hardcopy form, which in itself requires a lot of manual work to maintain.</p>"+
                     "<p>The project is made up of three components:</p>"+
                     "<ol>"+
-                    "<li>Inbound: processes incoming documents via email/fax/scanner into long term preservation format (PDF), and produces their corresponding metadata for processing by the repository module.</li>"+
-                    "<li>Repository: stores the documents along with their metadata, and provides interface for searching the documents.</li>"+
-                    "<li>Outbound: send correspondence documents to third party, as well as archiving the correspondence documents back in repository.</li>"+
+                    "<li><em>Inbound</em>: processes incoming documents via email/fax/scanner into long term preservation format (PDF), and produces their corresponding metadata for processing by the repository module.</li>"+
+                    "<li><em>Repository</em>: stores the documents along with their metadata, and provides interface for searching the documents.</li>"+
+                    "<li><em>Outbound</em>: send correspondence documents to third party, as well as archiving the correspondence documents back in repository.</li>"+
                     "</ol>"+
                     "<p>Document Management System is implemented in both Java and .NET. The inbound module is implemented in .NET, while the repository and outbound modules are implemented in Java.</p>"
                 }
@@ -77,14 +77,14 @@ workHistory = {"workHistory": [
                     "start" : "June 2009",
                     "finish": "October 2010",
                     "summary":
-                         "<p>Taipan is a system built to replace Toyota’s existing parts ordering system. It integrates with SAP, TMC’s GTOPAS, as well as existing dealer and supplier systems through web services. Some of the system functionalities are:.</p>"+
+                         "<p>Taipan is a system built to replace Toyota's existing parts ordering system. It integrates with SAP, <abbr title='Toyota Motor Corporation'>TMC</abbr>'s GTOPAS, as well as existing dealer and supplier systems through web services. Some of the system functionalities are:.</p>"+
                          "<ul>" +
                                 "<li>For dealer to order service parts, both through web interface and web services invocation.</li>"+
                                 "<li>Sending purchase order to supplier, through web services invocation.</li>"+
                                 "<li>For supplier to notify advanced shipping notice.</li>"+
                                 "<li><em>Event-based</em> architecture for processing files from GTOPAS.</li>"+
                          "</ul>"+
-                         "<p>The project also adds a few enhancements to Toyota's home-grown ESB (IBus) system, to name a few:</p>"+
+                         "<p>The project also adds a few enhancements to Toyota's home-grown <abbr title='Enterprise Service Bus'>ESB</abbr> (IBus) system, to name a few:</p>"+
                          "<ul>"+
                                 "<li>Support SOAP with attachment.</li>"+
                                 "<li>Support routing to FTP endpoints.</li>"+
@@ -102,7 +102,7 @@ workHistory = {"workHistory": [
                         "additional functions, such as report generation and scheduling dealer activation / deactivation.</p>"
                 },
                 {
-                    "name" :"Accessory Fitting Instruction",
+                    "name" :"Accessory Fitting Instruction (AFI)",
                     "start" : "August 2008",
                     "finish": "October 2008",
                     "summary":
@@ -111,7 +111,7 @@ workHistory = {"workHistory": [
                         "Toyota to obtain a hardcopy of these documents, a manual process which might introduce delay to the business activity.</p>"
                 },
                 {
-                    "name" :"Sarbane Oxley Database Management",
+                    "name" :"Sarbane Oxley (SOX) Database Management",
                     "start" : "December 2007",
                     "finish": "June 2008",
                     "summary":
@@ -120,7 +120,7 @@ workHistory = {"workHistory": [
                         "backend back-end that is deployed to Weblogic application server.</p>"
                 },
                 {
-                    "name" :"Kanban Printing System",
+                    "name" :"Kanban Printing System (KPS)",
                     "start" : "August 2006",
                     "finish": "December 2006",
                     "summary":
