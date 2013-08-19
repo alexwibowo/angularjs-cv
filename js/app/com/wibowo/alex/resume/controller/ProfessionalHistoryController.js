@@ -1,15 +1,23 @@
-Namespace("com.wibowo.alex.resume.controller");
+define(['app/com/wibowo/alex/resume/model/WorkHistoryItem'], function(WorkHistoryItem){
+        'use strict';
 
-com.wibowo.alex.resume.controller.ProfessionalHistoryController = function($scope){
-    $scope.works = [];
-    this.getHistory($scope);
-};
+        function ProfessionalHistoryController($scope){
+            $scope.works = [];
+            this.getHistory($scope);
+        }
 
-com.wibowo.alex.resume.controller.ProfessionalHistoryController.prototype.getHistory = function(scope){
-    var workHistory = window.workHistory.workHistory;
 
-    for(var i=0; i < workHistory.length; i++) {
-        var currentEntry = workHistory[i];
-        scope.works.push(new com.wibowo.alex.resume.model.WorkHistoryItem(currentEntry));
-    }
-};
+        ProfessionalHistoryController.prototype.getHistory = function(scope){
+            var workHistory = window.workHistory.workHistory;
+
+            for(var i=0; i < workHistory.length; i++) {
+                var currentEntry = workHistory[i];
+                scope.works.push(new WorkHistoryItem(currentEntry));
+            }
+        };
+
+	
+        ProfessionalHistoryController.$inject = ['$scope'];
+        return ProfessionalHistoryController;
+});
+

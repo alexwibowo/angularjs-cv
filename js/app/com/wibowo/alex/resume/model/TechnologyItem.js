@@ -1,5 +1,6 @@
-Namespace("com.wibowo.alex.resume.model");
-
-com.wibowo.alex.resume.model.TechnologyItem = function(label){
-    this.label = label;
-};
+define(function(){
+	function TechnologyItem(label){
+	    this.label = label;
+	}
+	return TechnologyItem;
+});
