@@ -1,4 +1,4 @@
-define(['app/com/wibowo/alex/resume/model/Project'], function(Project){
+define(['modules/shared/model/Project'], function(Project){
 	function WorkHistoryItem(data){
 	    this.company = data.company;
 	    this.start = data.start;

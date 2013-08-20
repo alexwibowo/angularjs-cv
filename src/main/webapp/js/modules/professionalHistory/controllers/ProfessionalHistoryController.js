@@ -1,7 +1,8 @@
-define(['app/com/wibowo/alex/resume/model/WorkHistoryItem'], function(WorkHistoryItem){
+define(['modules/shared/model/WorkHistoryItem'], function(WorkHistoryItem){
         'use strict';
 
         function ProfessionalHistoryController($scope){
+            console.log('Constructing ProfessionalHistoryController');
             $scope.works = [];
             this.getHistory($scope);
         }

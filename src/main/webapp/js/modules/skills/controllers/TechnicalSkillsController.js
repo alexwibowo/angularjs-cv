@@ -1,4 +1,4 @@
-define(['app/com/wibowo/alex/resume/model/Skill', 'app/com/wibowo/alex/resume/model/TechnologyItem'], function(Skill, TechnologyItem){
+define(['modules/shared/model/Skill', 'modules/shared/model/TechnologyItem'], function(Skill, TechnologyItem){
 	function TechnicalSkillsController($scope){
         console.log('Constructing TechnicalSkillsController');
         $scope.skills = [];
