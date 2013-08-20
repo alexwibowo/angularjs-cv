@@ -5,8 +5,9 @@ define([
         console.log("Initializing referees module");
         var module = angular.module('referees', []);
         module.config(['$stateProvider', '$routeProvider', '$urlRouterProvider', function ($stateProvider, $routeProvider, $urlRouterProvider) {
-            $routeProvider.
-                when("/referees",{
+            $stateProvider.
+                state("refereesState",{
+                    url: "/referees",
                     templateUrl: 'js/modules/referees/views/referees.html'
                 })
         }]);

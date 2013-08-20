@@ -2,7 +2,14 @@
     <header class="page-header">
         <h2>Profile</h2>
     </header>
-    <ul>
-        <li>Sample profile here..</li>
-    </ul>
+
+    <div class="navbar" bs-navbar>
+        <div class="navbar-inner">
+            <ul class="nav">
+                <li data-match-route="/profile/summary"><a href="#/profile/summary">Summary</a></li>
+                <li data-match-route="/profile/education"><a href="#/profile/education">Education</a></li>
+            </ul>
+        </div>
+    </div>
+    <div ui-view></div>
 </section>

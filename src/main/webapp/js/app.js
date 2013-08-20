@@ -2,7 +2,6 @@ define(
     [
         'angular',
         'states',
-        'modules/education/index',
         'modules/professionalHistory/index',
         'modules/profile/index',
         'modules/skills/index',
@@ -18,19 +17,15 @@ define(
             'ui.compat',
             'services',
             'technicalSkills',
-            'education',
             'professionalHistory',
             'profile',
-            'education',
             'referees'
-            ]).config(['$httpProvider','$routeProvider',function($httpProvider, $routeProvider) {
+            ]).config(['$httpProvider','$stateProvider', '$urlRouterProvider',function($httpProvider, $stateProvider, $urlRouterProvider) {
                 $httpProvider.defaults.headers.common['Content-Type'] = 'application/json;charset=UTF-8';
                 $httpProvider.defaults.headers.common['Accept'] = 'application/json;charset=UTF-8';
 
-                $routeProvider.
-                    when("/",{
-                        redirectTo: '/profile'
-                    });
+                // by default, show summary
+                $urlRouterProvider.otherwise("/profile/summary");
             }]).constant('REST_HOST', 'http://localhost:8080\:8080/'
         );
 

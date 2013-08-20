@@ -19,15 +19,15 @@ require({
     ],
     urlArgs: 'v=0.1'
 },
+    // list of modules to be loaded up front
     [
-        'app',
-        'modules/education/index',
+        'app',          // main application
         'modules/professionalHistory/index',
         'modules/profile/index',
         'modules/skills/index',
         'modules/referees/index',
-        'startup',
-        'bootstrap'
+        'startup',      // angular startup
+        'bootstrap'     // twitter bootstrap
     ],
     function(app){ app.run(['$rootScope','$state','$stateParams',
         function($rootScope, $state, $stateParams){

@@ -7,8 +7,9 @@ define([
         var module = angular.module('professionalHistory', []);
         module.controller('ProfessionalHistoryController', ProfessionalHistoryController);
         module.config(['$stateProvider', '$routeProvider', '$urlRouterProvider', function ($stateProvider, $routeProvider, $urlRouterProvider) {
-                $routeProvider.
-                    when("/professional-history",{
+            $stateProvider.
+                    state("professionalHistoryState",{
+                        url:"/professional-history",
                         templateUrl: 'js/modules/professionalHistory/views/professionalHistory.html'
                     })
         }]);
