@@ -4,7 +4,7 @@ define([
 ],
     function(angular, TechnicalSkillsController){
         console.log("Initializing technicalSkills module");
-        var module = angular.module('technicalSkills', ['services']);
+        var module = angular.module('technicalSkillsModule', ['services']);
         module.controller('TechnicalSkillsController', TechnicalSkillsController);
         module.config(['$stateProvider','$routeProvider', '$urlRouterProvider', function($stateProvider, $routeProvider, $urlRouterProvider){
             $stateProvider.

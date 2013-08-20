@@ -4,7 +4,7 @@ define([
     ],
     function(angular, ProfessionalHistoryController){
         console.log("Initializing professionalHistory module");
-        var module = angular.module('professionalHistory', []);
+        var module = angular.module('professionalHistoryModule', []);
         module.controller('ProfessionalHistoryController', ProfessionalHistoryController);
         module.config(['$stateProvider', '$routeProvider', '$urlRouterProvider', function ($stateProvider, $routeProvider, $urlRouterProvider) {
             $stateProvider.

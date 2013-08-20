@@ -16,10 +16,10 @@ define(
         var app = angular.module('alexResume', [
             'ui.compat',
             'services',
-            'technicalSkills',
-            'professionalHistory',
-            'profile',
-            'referees'
+            'technicalSkillsModule',
+            'professionalHistoryModule',
+            'profileModule',
+            'refereesModule'
             ]).config(['$httpProvider','$stateProvider', '$urlRouterProvider',function($httpProvider, $stateProvider, $urlRouterProvider) {
                 $httpProvider.defaults.headers.common['Content-Type'] = 'application/json;charset=UTF-8';
                 $httpProvider.defaults.headers.common['Accept'] = 'application/json;charset=UTF-8';

@@ -3,7 +3,7 @@ define([
 ],
     function(angular){
         console.log("Initializing referees module");
-        var module = angular.module('referees', []);
+        var module = angular.module('refereesModule', []);
         module.config(['$stateProvider', '$routeProvider', '$urlRouterProvider', function ($stateProvider, $routeProvider, $urlRouterProvider) {
             $stateProvider.
                 state("refereesState",{

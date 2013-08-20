@@ -3,7 +3,7 @@ define([
 ],
     function(angular){
         console.log("Initializing profile module");
-        var module = angular.module('profile', []);
+        var module = angular.module('profileModule', []);
         module.config(['$stateProvider', '$routeProvider', '$urlRouterProvider', function ($stateProvider, $routeProvider, $urlRouterProvider) {
             $stateProvider.
                 state("profile",{
