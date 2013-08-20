@@ -3,8 +3,10 @@
         <h2>Technical Skills</h2>
     </header>
 
+    <input type="text" placeholder="Filter.." ng-model="filterKeyword">
+
     <table class="table table-striped table-bordered table-hover">
-        <tr ng-repeat="skill in skills">
+        <tr ng-repeat="skill in skills | filter: filterKeyword">
             <th>
                 {{skill.label}}
             </th>
